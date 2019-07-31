@@ -81,7 +81,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Bagas Islam Mahendra
+                    Bagas I M
                 </div>
 
                 <div class="links">

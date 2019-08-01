@@ -81,7 +81,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Bagas I M
+                    Perpustakaan (Dalam Proses)...
                 </div>
 
                 <div class="links">

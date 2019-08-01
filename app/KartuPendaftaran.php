@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class KartuPendaftaran extends Model
 {
-    protected $fillable = ['kartu_barkode','petugas_kode','peminjam_kode','tgl_pembuatan','tgl_akhir','status_aktif'];
+    protected $fillable = ['kartu_barkode','petugas_kode','peminjam_kode','kartu_tgl_pembuatan','kartu_tgl_akhir','kartu_status_aktif'];
     public $timestamps = true;
 
     public function peminjam()

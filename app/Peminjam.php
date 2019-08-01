@@ -11,7 +11,7 @@ class Peminjam extends Model
 
     public function peminjaman()
     {
-        return $this->hasOne('App\Peminjaman','peminjaman_kode');
+        return $this->hasOne('App\Peminjaman','peminjam_kode');
     }
 
     public function kartupendaftaran()

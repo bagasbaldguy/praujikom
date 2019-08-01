@@ -15,14 +15,15 @@ class CreateDetailPinjamsTable extends Migration
     {
         Schema::create('detail_pinjams', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->unsignedBigInteger('peminjam_kode');
-            $table->foreign('peminjam_kode')->references('id')->on('peminjamen')->onDelete('cascade');
+            $table->unsignedBigInteger('peminjaman_kode');
+            $table->foreign('peminjaman_kode')->references('id')->on('peminjamen')->onDelete('cascade');
             
             $table->unsignedBigInteger('buku_kode');
             $table->foreign('buku_kode')->references('id')->on('bukus')->onDelete('cascade');
-            $table->date('tgl_kembali');
-            $table->integer('denda');
-            $table->string('status_kembali');
+
+            $table->date('detail_tgl_kembali');
+            $table->integer('detail_denda');
+            $table->string('detail_status_kembali');
             $table->timestamps();
         });
     }

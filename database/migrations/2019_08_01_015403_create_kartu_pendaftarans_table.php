@@ -23,9 +23,9 @@ class CreateKartuPendaftaransTable extends Migration
             $table->unsignedBigInteger('peminjam_kode');
             $table->foreign('peminjam_kode')->references('id')->on('peminjams')->onDelete('cascade');
 
-            $table->date('tgl_pembuatan');
-            $table->date('tgl_akhir');
-            $table->string('status_aktif');
+            $table->date('kartu_tgl_pembuatan');
+            $table->date('kartu_tgl_akhir');
+            $table->string('kartu_status_aktif');
             $table->timestamps();
         });
     }

@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Buku extends Model
 {
-    protected $fillable = ['kode','kategori_kode','penerbit_kode','judul','jumlah','deskripsi','pengarang','thn_terbit'];
+    protected $fillable = ['buku_kode','kategori_kode','penerbit_kode','buku_judul','buku_jumhal','buku_diskripsi','buku_pengarang','buku_tahun_terbit'];
     public $timestamps = true;
 
     public function penerbit()
@@ -16,5 +16,9 @@ class Buku extends Model
     public function kategori()
     {
         return $this->belongsTo('App\Kategori','kategori_kode');
+    }
+    public function detailpinjam()
+    {
+        return $this->hasOne('App\DetailPinjam','buku_kode');
     }
 }

@@ -6,5 +6,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class DetailPinjam extends Model
 {
-    //
+    protected $fillable = ['peminjaman_kode','buku_kode','tgl_kembali','denda','status_kembali'];
+    public $timestamps = true;
+
+    
 }

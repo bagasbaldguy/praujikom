@@ -37,13 +37,16 @@
                         {{--  Kondisi  --}}
                         @else
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('login') }}">Menu 1</a>
+                                <a class="nav-link" href="{{ route('login') }}">AUTH Role Super Admin</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('login') }}">Menu 2</a>
+                                <a class="nav-link" href="{{ route('login') }}">AUTH Role Admin</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('login') }}">Menu 3</a>
+                                <a class="nav-link" href="{{ route('login') }}">AUTH Role User</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ route('login') }}">AUTH Role Global User</a>
                             </li>
                         @endguest
                     </ul>

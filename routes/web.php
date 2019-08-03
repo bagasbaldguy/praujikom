@@ -24,5 +24,4 @@ Route::group(['prefix' => 'admin', 'middleware' => ['auth','role:admin']], funct
     Route::get('/', function () {
         return view('admin.index');
     });
-    // Route::resource('user','UserController');
 });

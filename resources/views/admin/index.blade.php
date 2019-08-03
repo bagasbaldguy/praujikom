@@ -14,7 +14,7 @@
                         </div>
                     @endif
 
-                    <b>{{ Auth::user()->name }}</b>, Welcome to Admin Dashboard
+                   <b>{{ Auth::user()->name }}</b>, You are logged in! - Admin
                 </div>
             </div>
         </div>

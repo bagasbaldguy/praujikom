@@ -36,9 +36,7 @@
                         @guest
                         {{--  Kondisi  --}}
                         @else
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ route('login') }}">AUTH Role Super Admin</a>
-                            </li>
+                        @role('admin')
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ route('login') }}">AUTH Role Admin</a>
                             </li>
@@ -46,8 +44,9 @@
                                 <a class="nav-link" href="{{ route('login') }}">AUTH Role User</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('login') }}">AUTH Role Global User</a>
+                                <a class="nav-link" href="{{ route('login') }}">AUTH Role Member</a>
                             </li>
+                            @endrole
                         @endguest
                     </ul>
 
